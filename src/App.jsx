@@ -89,7 +89,7 @@ function AboutMe() {
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
         <div className="w-40 h-40 md:w-56 md:h-56 overflow-hidden rounded-full border-4 border-blue-500 shadow-lg hover:scale-105 transition">
           <img
-            src="/img/profile_img.jpg"
+            src="/profile_img.jpg"
             alt="Profile of Joshua"
             className="w-full h-full object-cover"
           />
@@ -134,13 +134,13 @@ function Project() {
   const projects = [
     {
       title: "Weather App",
-      img: "/img/weatherAppProject.png",
+      img: "/weatherAppProject.png",
       desc: "A simple weather application built with React and API integration.",
       link: "https://github.com/jocalvinshua/Weather-App-Project"
     },
     {
       title: "To-Do App",
-      img: "/img/TodoAppProject.png",
+      img: "/TodoAppProject.png",
       desc: "A task management app built with React that helps users manage daily tasks.",
       link: "https://github.com/jocalvinshua/To-Do-List-Project"
     },
@@ -177,9 +177,9 @@ function Contact() {
       <h2 className="text-3xl font-bold text-center mb-6">Contact Me</h2>
       <p className="text-center mb-6">Silakan hubungi saya melalui email atau media sosial di bawah ini.</p>
       <div className="flex justify-center gap-6 text-2xl">
-        <a href="mailto:email@example.com" className="text-blue-600 hover:underline"><Mail /></a>
+        <a href="mailto:calvinjoshua37@gmail.com" className="text-blue-600 hover:underline"><Mail /></a>
         <a href="https://github.com/joshuacalvin" target="_blank" className="text-blue-600 hover:underline"><Github /></a>
-        <a href="https://linkedin.com/in/joshuacalvin" target="_blank" className="text-blue-600 hover:underline"><Linkedin /></a>
+        <a href="https://linkedin.com/in/joshua-calvin-12a7a2319" target="_blank" className="text-blue-600 hover:underline"><Linkedin /></a>
       </div>
     </section>
   );
