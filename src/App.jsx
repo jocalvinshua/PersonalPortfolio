@@ -32,10 +32,11 @@ function Navbar() {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 text-gray-700 font-medium">
-          <li className="hover:text-blue-600 cursor-pointer">Home</li>
-          <li className="hover:text-blue-600 cursor-pointer">About</li>
-          <li className="hover:text-blue-600 cursor-pointer">Projects</li>
-          <li className="hover:text-blue-600 cursor-pointer">Contact</li>
+          <li className="hover:text-blue-600 cursor-pointer" id="#home">Home</li>
+          <li className="hover:text-blue-600 cursor-pointer" id="#aboutme">About Me</li>
+          <li className="hover:text-blue-600 cursor-pointer" id="#skills">Skills</li>
+          <li className="hover:text-blue-600 cursor-pointer" id="project">Projects</li>
+          <li className="hover:text-blue-600 cursor-pointer" id="contactme">Contact Me</li>
         </ul>
 
         {/* Hamburger Icon */}
@@ -61,10 +62,10 @@ function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <ul className="md:hidden bg-white shadow-md px-4 py-4 space-y-4 text-gray-700 font-medium">
-          <li className="hover:text-blue-600 cursor-pointer">Home</li>
-          <li className="hover:text-blue-600 cursor-pointer">About</li>
-          <li className="hover:text-blue-600 cursor-pointer">Projects</li>
-          <li className="hover:text-blue-600 cursor-pointer">Contact</li>
+          <li className="hover:text-blue-600 cursor-pointer" id="home">Home</li>
+          <li className="hover:text-blue-600 cursor-pointer" id="aboutme">About Me</li>
+          <li className="hover:text-blue-600 cursor-pointer" id="project">Projects</li>
+          <li className="hover:text-blue-600 cursor-pointer" id="contactme">Contact Me</li>
         </ul>
       )}
     </nav>
@@ -73,7 +74,7 @@ function Navbar() {
 
 function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center bg-gray-900 text-white text-center px-4 pt-28">
+    <section id="home" className="min-h-screen flex flex-col justify-center items-center bg-gray-900 text-white text-center px-4 pt-28">
       <h1 className="text-3xl md:text-5xl font-bold mb-4">Hello World! My name is Joshua Calvin</h1>
       <p className="text-base md:text-xl max-w-xl mb-6">
         A creative web developer dedicated to building sleek, modern, and user-friendly web applications.
@@ -85,7 +86,7 @@ function Hero() {
 
 function AboutMe() {
   return (
-    <section className="py-20 px-6 bg-white text-gray-800">
+    <section id="aboutme" className="py-20 px-6 bg-white text-gray-800">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
         <div className="w-40 h-40 md:w-56 md:h-56 overflow-hidden rounded-full border-4 border-blue-500 shadow-lg hover:scale-105 transition">
           <img
@@ -116,7 +117,7 @@ function Skills() {
   ];
 
   return (
-    <section className="py-20 bg-gray-100 px-6">
+    <section id="skills" className="py-20 bg-gray-100 px-6">
       <h2 className="text-3xl font-bold text-center mb-10">Skills</h2>
       <div className="flex flex-wrap justify-center gap-6">
         {skillItems.map((skill, index) => (
@@ -146,14 +147,14 @@ function Project() {
     },
     {
       title: "Recipe Website App",
-      img: "/img/recipeWebsite.png",
+      img: "/recipeWebsite.png",
       desc: "A recipe website that lets users browse and view categorized recipes.",
       link: "https://github.com/jocalvinshua/Recipe-Website"
     }
   ];
 
   return (
-    <section id="projects" className="py-20 px-6 bg-white text-gray-800">
+    <section id="project" className="py-20 px-6 bg-white text-gray-800">
       <h2 className="text-3xl font-bold text-left mb-10">My Project</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((proj, index) => (
@@ -173,9 +174,9 @@ function Project() {
 
 function Contact() {
   return (
-    <section className="py-20 px-6 bg-gray-100 text-gray-800">
+    <section id="contactme" className="py-20 px-6 bg-gray-100 text-gray-800">
       <h2 className="text-3xl font-bold text-center mb-6">Contact Me</h2>
-      <p className="text-center mb-6">Silakan hubungi saya melalui email atau media sosial di bawah ini.</p>
+      <p className="text-center mb-6">Please contact me via email or social media below.</p>
       <div className="flex justify-center gap-6 text-2xl">
         <a href="mailto:calvinjoshua37@gmail.com" className="text-blue-600 hover:underline"><Mail /></a>
         <a href="https://github.com/joshuacalvin" target="_blank" className="text-blue-600 hover:underline"><Github /></a>
