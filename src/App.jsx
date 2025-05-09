@@ -36,7 +36,7 @@ function Navbar(){
 function Hero(){
   return(
     <section className="min-h-screen flex flex-col justify-center items-center bg-gray-900 text-white text-center px-4">
-      <h1 className="text-5xl font-bold mb-4">Hello World! My Name is Joshua Calvin</h1>
+      <h1 className="text-5xl font-bold mb-4">Hello World! My name Joshua Calvin</h1>
       <p className="text-xl max-w-xl mb-6">A creative web developer dedicated to building sleek, modern, and user-friendly web applications.</p>
       <a href="#projects" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-xl transition">See My Project</a>
     </section>
