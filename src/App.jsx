@@ -131,7 +131,7 @@ function Project(){
 
         <div className="bg-gray-50 rounded-xl shadow hover:shadow-2xl hover:scale-[1.02] hover:shadow-blue-200 transition-all duration-300 ease-in-out p-6 flex flex-col">
           <img 
-            src="./src/img/TodoAppProject.png" 
+            src="src/img/TodoAppProject.png" 
             alt="To-Do App Screenshot" 
             className="rounded-lg mb-4 h-40 object-cover"
           />
