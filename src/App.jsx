@@ -32,11 +32,11 @@ function Navbar() {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 text-gray-700 font-medium">
-          <li className="hover:text-blue-600 cursor-pointer" id="#home">Home</li>
-          <li className="hover:text-blue-600 cursor-pointer" id="#aboutme">About Me</li>
-          <li className="hover:text-blue-600 cursor-pointer" id="#skills">Skills</li>
-          <li className="hover:text-blue-600 cursor-pointer" id="project">Projects</li>
-          <li className="hover:text-blue-600 cursor-pointer" id="contactme">Contact Me</li>
+          <li><a href="#home" className="hover:text-blue-600">Home</a></li>
+          <li><a href="#aboutme" className="hover:text-blue-600">About Me</a></li>
+          <li><a href="#skills" className="hover:text-blue-600">Skills</a></li>
+          <li><a href="#project" className="hover:text-blue-600">Projects</a></li>
+          <li><a href="#contactme" className="hover:text-blue-600">Contact Me</a></li>
         </ul>
 
         {/* Hamburger Icon */}
@@ -62,10 +62,11 @@ function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <ul className="md:hidden bg-white shadow-md px-4 py-4 space-y-4 text-gray-700 font-medium">
-          <li className="hover:text-blue-600 cursor-pointer" id="home">Home</li>
-          <li className="hover:text-blue-600 cursor-pointer" id="aboutme">About Me</li>
-          <li className="hover:text-blue-600 cursor-pointer" id="project">Projects</li>
-          <li className="hover:text-blue-600 cursor-pointer" id="contactme">Contact Me</li>
+          <li><a href="#home" className="hover:text-blue-600">Home</a></li>
+          <li><a href="#aboutme" className="hover:text-blue-600">About Me</a></li>
+          <li><a href="#skills" className="hover:text-blue-600">Skills</a></li>
+          <li><a href="#project" className="hover:text-blue-600">Projects</a></li>
+          <li><a href="#contactme" className="hover:text-blue-600">Contact Me</a></li>
         </ul>
       )}
     </nav>
@@ -79,7 +80,7 @@ function Hero() {
       <p className="text-base md:text-xl max-w-xl mb-6">
         A creative web developer dedicated to building sleek, modern, and user-friendly web applications.
       </p>
-      <a href="#projects" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-xl transition">See My Project</a>
+      <a href="https://github.com/jocalvinshua?tab=repositories" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-6 rounded-xl transition">See All My Project</a>
     </section>
   );
 }
